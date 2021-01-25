@@ -86,6 +86,23 @@ app.get('/video/:video', async (req, res) => {
     }
 });
 
+app.get('/info/:video', async (req, res) => {
+    try {
+        var url = req.query.url;
+        if (!ytdl.validateURL(url)) {
+            return res.sendStatus(400);
+        }
+        const info = await ytdl.getInfo(url);
+        const infoGood = {
+            title: info.videoDetails.title,
+            thumbnails: info.videoDetails.thumbnails
+        };
+        res.send(infoGood);
+    } catch (err) {
+        console.error(err);
+    }
+});
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Sample URL: http://localhost:4000/hd/video?url=https://www.facebook.com/LyricsEngsongs/videos/321854395918041/ //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
