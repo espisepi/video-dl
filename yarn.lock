@@ -635,10 +635,10 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-ytdl-core@^4.4.4:
-  version "4.4.4"
-  resolved "https://registry.yarnpkg.com/ytdl-core/-/ytdl-core-4.4.4.tgz#d7635dc4ea95965b52589bd3adc6b28368daae22"
-  integrity sha512-/IFJTM5RjN20q6RVaE/9rv9tKoBtx95lKZCI/pUPDiDzu9fXyuPbkVzEQJmsYEwzi0zdv4d6iJy0gHWz49o6mw==
+ytdl-core@^4.8.3:
+  version "4.8.3"
+  resolved "https://registry.yarnpkg.com/ytdl-core/-/ytdl-core-4.8.3.tgz#21570d1834db13dec7828cf87bbf4c83c0fe68d7"
+  integrity sha512-cWCBeX4FCgjcKmuVK384MT582RIAakpUSeMF/NPVmhO8cWiG+LeQLnBordvLolb0iXYzfUvalgmycYAE5Sy6Xw==
   dependencies:
     m3u8stream "^0.8.3"
     miniget "^4.0.0"
