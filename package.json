@@ -4,6 +4,9 @@
   "description": "Youtube and Facebook Downloader.",
   "main": "index.js",
   "private": true,
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "test": "node test.js",
     "dev": "nodemon index.js --ext '*'",
